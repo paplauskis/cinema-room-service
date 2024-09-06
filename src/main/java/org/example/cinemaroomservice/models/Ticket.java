@@ -2,13 +2,13 @@ package org.example.cinemaroomservice.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-public class Seat {
+public class Ticket {
     private final int row;
     private final int column;
     private final int price;
     private boolean isPurchased;
 
-    public Seat(int row, int column, int price) {
+    public Ticket(int row, int column, int price) {
         this.row = row;
         this.column = column;
         this.price = price;
@@ -33,6 +33,6 @@ public class Seat {
     }
 
     public void purchase() {
-        this.isPurchased = true;
+        isPurchased = true;
     }
 }
