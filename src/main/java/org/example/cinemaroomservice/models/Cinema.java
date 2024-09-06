@@ -1,4 +1,4 @@
-package org.example.cinemaroomservice;
+package org.example.cinemaroomservice.models;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
