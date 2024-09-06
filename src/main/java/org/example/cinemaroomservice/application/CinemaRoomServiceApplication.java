@@ -1,4 +1,4 @@
-package org.example.cinemaroomservice;
+package org.example.cinemaroomservice.application;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
