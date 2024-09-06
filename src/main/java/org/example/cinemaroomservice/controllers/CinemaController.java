@@ -12,7 +12,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api")
+`@RequestMapping("/api")
 public class CinemaController {
 
     @Autowired
@@ -26,7 +26,7 @@ public class CinemaController {
     @PostMapping("/purchase")
     ResponseEntity<?> getPurchasedSeat(@RequestBody SeatPurchaseRequestDTO request) {
         try {
-            Seat purchasedSeat = cinemaService.purchaseSeat(request.getRow(), request.getColumn());
+            Seat purchasedSeat = cinemaService.purchaseSeat(request.row(), request.column());
             return new ResponseEntity<>(purchasedSeat, HttpStatus.OK);
         } catch (InvalidSeatNumberException | SeatNotFoundException | SeatAlreadyPurchasedException e) {
             ErrorResponseDTO errorResponse = new ErrorResponseDTO(e.getMessage());
