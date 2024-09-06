@@ -1,5 +1,7 @@
-package org.example.cinemaroomservice;
+package org.example.cinemaroomservice.controllers;
 
+import org.example.cinemaroomservice.models.Cinema;
+import org.example.cinemaroomservice.services.CinemaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -9,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api")
-public class Controller {
+public class CinemaController {
 
     @Autowired
     private CinemaService cinemaService;
