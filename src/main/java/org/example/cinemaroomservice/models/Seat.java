@@ -1,4 +1,4 @@
-package org.example.cinemaroomservice;
+package org.example.cinemaroomservice.models;
 
 public class Seat {
     private final int row;
