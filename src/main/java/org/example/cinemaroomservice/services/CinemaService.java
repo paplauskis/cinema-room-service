@@ -1,5 +1,7 @@
-package org.example.cinemaroomservice;
+package org.example.cinemaroomservice.services;
 
+import org.example.cinemaroomservice.models.Cinema;
+import org.example.cinemaroomservice.models.Seat;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
