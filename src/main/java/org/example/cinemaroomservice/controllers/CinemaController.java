@@ -12,7 +12,6 @@ import org.example.cinemaroomservice.services.CinemaService;
 import org.example.cinemaroomservice.services.StatsService;
 import org.example.cinemaroomservice.services.TicketService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -67,7 +66,7 @@ public class CinemaController {
             throw new WrongAdminPasswordException("Invalid password!");
         } catch (WrongAdminPasswordException e) {
             ErrorResponseDTO errorResponse = new ErrorResponseDTO(e.getMessage());
-            return new ResponseEntity<>(errorResponse, HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>(errorResponse, HttpStatus.UNAUTHORIZED);
         }
     }
 }
